@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Pagina Identificadora</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body class="bodyImage">
+    <div class="contenedorBack">
+        <header class="contenedorHeader"> Identificador De Caracteres</header>
+        <h1></h1>
+        <section>
+            <article>
+                <div class="contenedor">
+                    <br> <br>
+                    <header class="headerSize">Ingrese Un Conjunto De Caracteres</header>
+                    <br>
+                    <input type="text" id="codigo" placeholder="ejemplo: abc123" class="inputShadow">
+                    <button onclick="identificar()">
+                        Ingresar
+                    </button>
+                    <br> <br><br>
+                </div>
+                <div class="contenedor">
+                    <header class="headerSize">Resultados Posibles: </header>
+                    <p style="text-align: left">
+                        IDENTIFICADOR: El primer carácter es una letra (A-Z), uno o más letras o números <br>
+                        NUMERO: Uno o más números <br>
+                        SIMBOLO: Uno o más símbolos <br>
+                        ERROR: No cumpla lo anterior
+                    </p>
+                    <br>
+                </div>
+            </article>
+            <br><br>
+            <article class="contenedorHistorial">
+                <h1>HISTORIAL</h1>
+                <ul>
+                    <div class="contenedorDatos">
+                        CODIGO:
+                    </div>
+                    <div class="contenedorDatos">
+                        RESULTADO:
+                    </div>
+                    <div class="contenedorDatos">
+                        DESCRIPCION:
+                    </div>
+                    <div class="contenedorDatos" id="historialCodigo">
+                    </div>
+                    <div class="contenedorDatos" id="historialResultado">
+
+                    </div>
+                    <div class="contenedorDatos" id="historialDescripcion">
+
+                    </div>
+                </ul>
+            </article>
+        </section>
+        <footer style="text-align: right">
+            <br>
+            Sergio Daniel Cifeuntes Argueta
+        </footer>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
